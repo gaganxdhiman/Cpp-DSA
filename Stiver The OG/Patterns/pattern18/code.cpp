@@ -3,23 +3,21 @@ using namespace std;
 
 int main() 
 {
-   int n =4; 
-   for(int i = 1; i<=n; i++){
-    for(int sp = 1; sp<=n-i; sp++){
-        cout<<" ";
-    }
+   
     
-    char ch = 'A';
-    int breakPoint = (2*i-1) /2;
-   for(int j = 1; j<=(2*i-1); j++){
-        cout<<ch;
-        if(j<=breakPoint){
-            ch++;
-        }
+    int n =5;
+
+    for(int i = 0; i<5; i++){
         
-        else ch--;
-   }
-    cout<<endl;
-   }
+       
+        for(char ch = ('A' + n-1)- i; ch<= 'E'; ch++){
+            cout<<ch<<" ";
+            
+        }
+        cout<<endl;
+    }
     return 0;
 }
+
+
+
